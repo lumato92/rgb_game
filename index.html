@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Color Guess</title>
+</head>
+<body>
+    <div class="main-container">
+        <section class="upper-container">
+            <h2 class="container-title">The Great</h2>
+            <div class="container-color-to-guess" id="colorTitle">RGB</div>
+            <h3 class="container-title">Guessing Game</h3>
+        </section>
+      <div class="game-selector">
+          <input type="button" id="newColBtn" value="New Colors">
+          <div class="dificulty-btn">
+          <input type="button" value="Facil">
+          <input type="button" value="Dificil">
+          </div>
+        </div>  
+      <section class="game-area">
+          <div class="color-box" id="box1" onclick="checkWin(this.id)"></div>
+          <div class="color-box" id="box2" onclick="checkWin(this.id)"></div>
+          <div class="color-box" id="box3" onclick="checkWin(this.id)"></div>
+          <div class="color-box" id="box4" onclick="checkWin(this.id)"></div>
+          <div class="color-box" id="box5" onclick="checkWin(this.id)"></div>
+          <div class="color-box" id="box6" onclick="checkWin(this.id)"></div>
+      </section>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+
+</html>
